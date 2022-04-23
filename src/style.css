@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,900;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(6, 4, 29);
+    color: rgba(255, 255, 255, 0.863);
+}
+
+.container {
+    min-width: 700px;
+    padding: 20px;
+    background-color: rgb(3, 2, 19);
+}
+
+.wrapper {
+    /* border: 1px solid rgb(6, 4, 29); */
+    text-align: center;
+}
+
+.text-input {
+    display: flex;
+    height: 350px;
+}
+
+.text-input textarea {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(6, 4, 29);
+    border: none;
+    outline: none;
+    padding: 20px;
+    margin: 5px;
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 16px;
+    font-weight: normal;
+}
+.text-input textarea::-webkit-scrollbar {
+    width: 20px;
+}
+.text-input textarea::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+.text-input textarea::-webkit-scrollbar-thumb {
+    background: rgb(3, 2, 19);
+    border-radius: 10px;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.controls li{
+    list-style: none;
+}
+.controls .row{
+    display: flex;
+    margin: 10px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+.controls .row select{
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(6, 4, 29);
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.863);
+}
+.controls .row select option:hover{
+    border: none;
+    outline: none;
+    background-color: rgb(3, 2, 19)  !important;
+}
+.icons{
+    display: flex;
+}
+
+.exchange,
+.fa-volume-up, 
+.fa-copy{
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.exchange:hover{
+    background-color: rgb(6, 4, 29);
+}
+.fa-volume-up:hover{
+    background-color: rgb(6, 4, 29);
+} 
+.fa-copy:hover{
+    background-color: rgb(6, 4, 29);
+}
+.btn-wrapper{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.btn-wrapper button{
+    width: 200px;
+    height: 75px;
+    margin: 0 0 20px 0;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(6, 4, 29);
+    color: rgba(255, 255, 255, 0.863);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.btn-wrapper button:hover{
+    background-color: rgba(6, 4, 29, 0.87);
+}

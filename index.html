@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>language-translator</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <h1 style="padding: 10px;">language-translator</h1>
+            <div class="text-input">
+                <textarea class="from-text" placeholder="Enter text"></textarea>
+                <textarea class="from-to" placeholder="Text Translator" readonly disabled></textarea>
+            </div>
+
+            <ul class="controls">
+                <li class="row to">
+                    <select>
+                    </select>
+                    <div class="icons">
+                        <i id="from" class="fas fa-volume-up"></i>
+                        <i id="from" class="far fa-copy"></i>
+                    </div>
+                </li>
+                <li class="exchange">
+                    <i class="fas fas fa-exchange-alt"></i>
+                </li>
+                <li class="row to">
+                    <select>
+                    </select>
+                    <div class="icons">
+                        <i id="to" class="fas fa-volume-up"></i>
+                        <i id="to" class="far fa-copy"></i>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn-wrapper">
+                <button class="translator-btn">Translator Text</button>
+            </div>
+      
+        </div>
+    </div>
+
+
+    <script src="./src/countries.js"></script>
+    <script src="./src/app.js"></script>
+</body>
+
+</html>
